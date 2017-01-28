@@ -5,6 +5,7 @@
 # You will need to use the input() function.
 # Make a call to that function
 
+
 # PROBLEM 2 (Pythagorean theorem - 4pts)
 # The Pythagorean theorem states that of a right triangle, the square of the
 # length of the diagonal side is equal to the sum of the squares of the lengths
