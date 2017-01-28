@@ -6,14 +6,22 @@ import random
 # I.e., the sequence starts with 1, 1, 2, 3, 5, 8, 13, 21,...
 # Write a program that calculates and prints the Fibonacci sequence
 # until the numbers get higher than 1000.
-sting=1
-zgolemi=0
-zbirt=1
-while sting<=1000:
-    zbir+=sting
-    sting=sting+zgolemi
-    zgolemi+=sting
-    print(sting)
+sting = 0
+zgolemi = 0
+n = 1
+fibbonaci_list = []
+
+for i in range(0, 1000):
+    n = n + sting
+    if (n < 1000):
+
+        fibbonaci_list.append(n)
+
+        if (i == 0):
+            sting = 0
+        else:
+            sting = fibbonaci_list[i - 1]
+print(fibbonaci_list)
 
 
 # PROBLEM 2 (Number Guessing Game - 6pts)
