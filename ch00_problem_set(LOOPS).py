@@ -91,6 +91,17 @@ while ((1000*a+100*c+10*b+a)!=4*(1000*a+100*b+10*c+d)):
     d=random.randrange(1,9)
 print(1000*a+100*b+10*c+d)
 
+numb1=0
+numb2=0
+for a in range(1,10):
+    for b in range(10):
+        for c in range(10):
+            for d in range(1,10):
+                numb1=int(str(d)+str(c) +str(b) +str(a))
+                numb2=int(str(a)+str(b)+str(c) +str(d))
+                if numb1==4*numb2:
+                    print("Digits are:",a,b,c,d);
+
 '''
 for i in range(100):
     if i==50:
