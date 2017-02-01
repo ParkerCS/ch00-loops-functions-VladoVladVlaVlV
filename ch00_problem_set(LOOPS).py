@@ -23,6 +23,24 @@ for i in range(0, 1000):
             sting = fibbonaci_list[i - 1]
 print(fibbonaci_list)
 
+# OR, so it won't print as a list(feb 1):
+sting = 0
+zgolemi = 0
+n = 1
+fibbonaci_list = []
+
+for i in range(0, 1000):
+    n = n + sting
+    if (n < 1000):
+
+        fibbonaci_list.append(n)
+
+        if (i == 0):
+            sting = 0
+        else:
+            sting = fibbonaci_list[i - 1]
+        print(int(fibbonaci_list[i]),end=" ")
+
 
 # PROBLEM 2 (Number Guessing Game - 6pts)
 # Write a program that takes a random integer between 1 and 1000
@@ -75,7 +93,7 @@ for j in range(glavenrezult):
             if vkupno >= 4:
                 n += 1
 
-    talala = n / glavenrezult
+    talala = n / glavenrezult*100
 print(talala)
 
 # PROBLEM 4 (Number Puzzler - 6pts)
