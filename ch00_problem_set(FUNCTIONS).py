@@ -1,3 +1,5 @@
+# 18/20
+
 #SECTION 2 - FUNCTIONS (20PTS TOTAL)
 import math
 import random
@@ -5,9 +7,11 @@ import random
 # Make a function which asks the user to enter a string, then prints the length of that string.
 # You will need to use the input() function.
 # Make a call to that function
-def striingy():
+def striingy(): # watch the variable names
     stringy=input("HI:")
     print(len(stringy))
+
+# You need to ask the user to enter a string.  Hi doesn't do that. (-1)
 
 # PROBLEM 2 (Pythagorean theorem - 4pts)
 # The Pythagorean theorem states that of a right triangle, the square of the
@@ -23,6 +27,10 @@ def pythagorean():
     b=int(b)
     print("The third side of the triangle you have specified is",math.sqrt(int(a**2)+int(b**2)))
 pythagorean()
+
+# Lee - Start writing as if you are writing for a client.
+# That means no abbreviations, misspellings, or confusing text (-1)
+
 # PROBLEM 3 (Biggest, smallest, average - 4pts)
 # Make a function to ask the user to enter three numbers.
 # Then print the largest, the smallest, and their average, rounded to 2 decimals.
@@ -46,6 +54,8 @@ def funckija():
     c = float((a + b) / 2)
     print("The largest number is", round(a,2), "The smallest one is", round(b,2), "the average is", round(c,2))
 
+
+
 # PROBLEM 4 (e to the... - 3pts)
 # Calculate the value of e (from the math library) to the power of -1, 0, 1, 2, and 3.
 # display the results, with 5 decimals, in a nicely formatted manner.
@@ -57,6 +67,9 @@ pecati(0)
 pecati(1)
 pecati(2)
 pecati(3)
+
+# Lee - Great place for a loop (DRY Principle)
+
 # PROBLEM 5 (Random int - 3pts)
 # Generate a random integer between 1 and 10 (1 and 10 both included),
 # but only use the random() function (randrange is not allowed here)
